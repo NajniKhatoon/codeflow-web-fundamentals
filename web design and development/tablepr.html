@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            background-color: rgb(254, 252, 252);
+        }
+        h2{
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        table{
+            color: rgb(0, 0, 0);
+            margin: 40px auto 0;
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: 60%;
+            border-radius: 20px;
+            text-align: center;
+        }
+        th{
+            color: rgb(239, 234, 234);
+            border: 1px solid rgb(0, 0, 0);
+            font-size: 1rem;
+            background-color: black;
+        }
+        td{
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            padding: 12px 20px;
+            background-color: rgb(255, 255, 255);
+        }
+        .grade.a{
+            color: blueviolet;
+        }
+        .grade.b{
+            color: brown;
+        }
+        .grade.c{
+            color: red;
+        }
+        .table-marks tbody tr:nth-child(even) td{
+            background-color: aquamarine;
+        }
+        .table-marks tbody tr:hover td{
+            background-color: rgb(204, 105, 105);
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="table-marks">
+    <thead>
+        <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grades</th>
+        </tr>
+        </thead>
+
+        <tr>
+            <td>001.</td>
+            <td>Najni</td>
+            <td>Maths</td>
+            <td>89</td>
+            <td class ="grade c">C</td>
+        </tr>
+
+        <tr>
+           <td>002.</td>
+            <td>Subina</td>
+            <td>Maths</td>
+            <td>90</td>
+            <td class="grade b">B</td>
+        </tr>
+
+        <tr>
+            <td>003.</td>
+            <td>Pritisha</td>
+            <td>Maths</td>
+            <td>93</td>
+            <td class="grade a">A</td>
+        </tr>
+    </table>
+</body>
+</html>
